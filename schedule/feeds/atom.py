@@ -30,6 +30,7 @@
 
 from xml.sax.saxutils import XMLGenerator
 from datetime import datetime
+from django.contrib.syndication.views import Feed as _Feed
 
 
 GENERATOR_TEXT = 'django-atompub'
@@ -70,7 +71,7 @@ def get_tag_uri(url, date):
 
 
 ## based on django.contrib.syndication.feeds.Feed
-class Feed(object):
+class Feed(_Feed):
     
     
     VALIDATE = True
