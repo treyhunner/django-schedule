@@ -74,12 +74,7 @@ class Feed(object):
     
     
     VALIDATE = True
-    
-    
-    def __init__(self, slug, feed_url):
-        # @@@ slug and feed_url are not used yet
-        pass
-    
+       
     
     def __get_dynamic_attr(self, attname, obj, default=None):
         try:
