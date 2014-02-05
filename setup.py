@@ -25,7 +25,7 @@ setup(
                  'Operating System :: OS Independent',
                  'Programming Language :: Python',
                  'Topic :: Utilities'],
-    install_requires=['setuptools', 'vobject', dateutil],
+    install_requires=['django', 'setuptools', 'vobject', dateutil],
     license='BSD',
-    test_suite = "schedule.tests",
+    test_suite = "runtests.runtests",
 )
